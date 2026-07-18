@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Zimam.co | شركة رائدة في إنتاج الدجاج الطازج في ليبيا</title>
+    <meta name="description" content="Zimam.co - شركة ليبية رائدة متخصصة في تربية الكتاكيت والتسمين والإنتاج والذبح والتجهيز والتعبئة وتوزيع الدجاج الطازج والمبرد والمجمد للمطاعم والفنادق والأسواق في ليبيا.">
+    <meta name="keywords" content="دواجن, دجاج طازج, ليبيا, تربية دواجن, تسمين, ذبح, تجهيز, تعبئة, توزيع, مطاعم, فنادق, Zimam.co">
+    <meta name="author" content="Zimam Co.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zimam-co.com/">
+    <link rel="icon" type="image/jpg" href="images/zimam.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zimam.co | إنتاج دجاج طازج بمعايير عالمية">
+    <meta property="og:description" content="من المزرعة إلى مائدتك - نقدم أجود أنواع الدجاج الطازج والمبرد والمجمد بمعايير جودة وسلامة غذائية عالمية.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://zimam-co.com/">
+    <meta property="og:locale" content="ar_LY">
+    <meta property="og:site_name" content="Zimam.co">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zimam.co | إنتاج دجاج طازج بمعايير عالمية">
+    <meta name="twitter:description" content="من المزرعة إلى مائدتك - نقدم أجود أنواع الدجاج الطازج والمبرد والمجمد.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop">
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Manufacturer",
+        "name": "Zimam.co",
+        "alternateName": "Zimam Co.",
+        "description": "شركة ليبية رائدة متخصصة في إنتاج وتوزيع الدجاج الطازج والمبرد والمجمد",
+        "url": "https://zimam-co.com",
+        "logo": "https://zimam-co.com/images/zimam.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "LY",
+            "addressLocality": "طرابلس"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+        "telephone": "+218-91-381-7515",
+            "contactType": "customer service",
+            "availableLanguage": ["Arabic", "English"]
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- ==================== CUSTOM CSS ==================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- WhatsApp Float Button -->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            z-index: 1000;
+            transition: transform 0.3s, box-shadow 0.3s;
+            direction: ltr;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37,211,102,0.6);
+        }
+        [data-lang="en"] .whatsapp-float {
+            left: auto;
+            right: 30px;
+        }
+        @media (max-width: 480px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ LOADING SCREEN ============ -->
+    <div class="loader" id="loader" role="status" aria-label="جاري التحميل">
+        <div class="loader-logo">Zimam.co<span>.</span></div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill" id="loaderBar"></div>
+        </div>
+        <div class="loader-text" data-ar="جاري تحميل الموقع..." data-en="Loading..."></div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="header-logo" aria-label="Zimam.co" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="images/zimam.jpg" alt="Zimam.co" style="height: 48px; width: auto; border: 2px solid #FFA500;">
+                    <span style="font-size: 18px; font-weight: bold; color: #000;">Zimam.co</span>
+                </a>
+
+                <nav class="nav" id="mainNav" role="navigation" aria-label="القائمة الرئيسية">
+                    <a href="#home" class="nav-link is-active" data-ar="الرئيسية" data-en="Home"></a>
+                    <a href="#about" class="nav-link" data-ar="من نحن" data-en="About"></a>
+                    <a href="#products" class="nav-link" data-ar="المنتجات" data-en="Products"></a>
+                    <a href="#quality" class="nav-link" data-ar="الجودة" data-en="Quality"></a>
+                    <a href="#sustainability" class="nav-link" data-ar="الاستدامة" data-en="Sustainability"></a>
+                    <a href="#news" class="nav-link" data-ar="الأخبار" data-en="News"></a>
+                    <a href="#contact" class="nav-link" data-ar="اتصل بنا" data-en="Contact"></a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" id="langToggle" aria-label="تبديل اللغة">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="langLabel">EN</span>
+                    </button>
+                    <a href="#contact" class="nav-cta" data-ar="اطلب الآن" data-en="Order Now"></a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="القائمة الجانبية">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="إغلاق القائمة">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="#home" class="nav-link" data-ar="الرئيسية" data-en="Home" data-mobile-nav></a>
+        <a href="#about" class="nav-link" data-ar="من نحن" data-en="About" data-mobile-nav></a>
+        <a href="#products" class="nav-link" data-ar="المنتجات" data-en="Products" data-mobile-nav></a>
+        <a href="#quality" class="nav-link" data-ar="الجودة" data-en="Quality" data-mobile-nav></a>
+        <a href="#sustainability" class="nav-link" data-ar="الاستدامة" data-en="Sustainability" data-mobile-nav></a>
+        <a href="#news" class="nav-link" data-ar="الأخبار" data-en="News" data-mobile-nav></a>
+        <a href="#contact" class="nav-link" data-ar="اتصل بنا" data-en="Contact" data-mobile-nav></a>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home" aria-label="القسم الرئيسي">
+        <div class="hero-bg">
+            <img src="images/حضيرة دجاج.jpg" alt="مزارع Zimam.co للدواجن" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" aria-hidden="true">
+            <div class="hero-particle" style="top:20%;left:10%;animation-delay:0s;"></div>
+            <div class="hero-particle" style="top:40%;left:80%;animation-delay:1.5s;"></div>
+            <div class="hero-particle" style="top:70%;left:30%;animation-delay:3s;"></div>
+            <div class="hero-particle" style="top:15%;left:60%;animation-delay:4.5s;"></div>
+            <div class="hero-particle" style="top:80%;left:70%;animation-delay:2s;"></div>
+            <div class="hero-particle" style="top:55%;left:15%;animation-delay:5s;"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+                    <i class="fa-solid fa-award"></i>
+                    <span data-ar="الرائدة في قطاع الدواجن منذ 2005" data-en="Leading the Poultry Industry Since 2005"></span>
+                </div>
+
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+                    <span data-ar="من المزرعة إلى مائدتك" data-en="From Farm to Your Table"></span><br>
+                    <span class="highlight" data-ar="بجودة لا مثيل لها" data-en="With Unmatched Quality"></span>
+                </h1>
+
+                <p class="hero-desc" data-aos="fade-up" data-aos-delay="600" data-ar="نقدم أجود أنواع الدجاج الطازج والمبرد والمجمد بأعلى معايير الجودة والسلامة الغذائية، من مزارعنا المتطورة في ليبيا إلى موائدكم مباشرة." data-en="We deliver the finest fresh, chilled, and frozen chicken with the highest quality and food safety standards, from our advanced farms in Libya directly to your tables."></p>
+
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="800">
+                    <a href="#products" class="btn btn--accent btn--lg">
+                        <span data-ar="استكشف منتجاتنا" data-en="Explore Products"></span>
+                        <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                    </a>
+                    <a href="#about" class="btn btn--ghost btn--lg">
+                        <span data-ar="تعرف علينا" data-en="About Us"></span>
+                    </a>
+                </div>
+
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number"><span class="counter" data-target="19">0</span>+</div>
+                        <div class="hero-stat-label" data-ar="سنة خبرة" data-en="Years Experience"></div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number"><span class="counter" data-target="50">0</span>M+</div>
+                        <div class="hero-stat-label" data-ar="دجاج سنوياً" data-en="Chicken Annually"></div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number"><span class="counter" data-target="500">0</span>+</div>
+                        <div class="hero-stat-label" data-ar="شريك تجاري" data-en="Trade Partners"></div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number"><span class="counter" data-target="12">0</span></div>
+                        <div class="hero-stat-label" data-ar="فرع ومرفق" data-en="Branches & Facilities"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <span data-ar="اكتشف المزيد" data-en="Discover More"></span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============ COMPANY INTRODUCTION ============ -->
+    <section class="section" id="about" aria-label="من نحن">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-image" data-aos="fade-right">
+                    <img src="images/حضيرة دجاج.jpg" alt="مزارع حديثة مجهزة بأحدث التقنيات" loading="lazy">
+                    <div class="intro-image-badge" data-ar=" منذ 2005 " data-en=" Since 2005 "></div>
+                </div>
+
+                <div class="intro-text" data-aos="fade-left">
+                    <div class="section-label" data-ar="من نحن" data-en="About Us"></div>
+                    <h2 data-ar="رائدة صناعة الدواجن في ليبيا بمعايير عالمية" data-en="Libya's Poultry Industry Leader with Global Standards"></h2>
+                    <p data-ar="تأسست شركة Zimam.co عام 2005 برؤية طموحة للريادة في قطاع الدواجن والأغذية في ليبيا. على مدار عقدين من العمل المتواصل، بنينا منظومة متكاملة تشمل تربية الكتاكيت والتسمين والإنتاج والذبح والتجهيز والتعبئة والتوزيع، كل ذلك وفق أعلى المعايير الدولية للجودة والسلامة الغذائية." data-en="Established in 2005 with an ambitious vision to lead Libya's poultry and food sector. Over two decades of continuous work, we've built an integrated system encompassing chick rearing, fattening, production, slaughtering, processing, packaging, and distribution — all according to the highest international quality and food safety standards."></p></p>
+                    <p data-ar="نخدم أكثر من 500 شريك تجاري يشملون أرقى المطاعم والفنادق والأسواق والمجمعات التجارية في جميع أنحاء ليبيا." data-en="We serve over 500 trade partners including the finest restaurants, hotels, markets, and commercial complexes across Libya."></p>
+
+                    <div class="intro-features">
+                        <div class="intro-feature">
+                            <div class="intro-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <span data-ar="معايير سلامة غذائية" data-en="Food Safety Standards"></span>
+                        </div>
+                        <div class="intro-feature">
+                            <div class="intro-feature-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <span data-ar="تقنيات متطورة" data-en="Advanced Technology"></span>
+                        </div>
+                        <div class="intro-feature">
+                            <div class="intro-feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <span data-ar="توزيع سريع" data-en="Fast Distribution"></span>
+                        </div>
+                        <div class="intro-feature">
+                            <div class="intro-feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <span data-ar="أعلاف طبيعية" data-en="Natural Feed"></span>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn--primary">
+                        <span data-ar="اقرأ المزيد عن Zimam.co" data-en="Read More About Zimam"></span>
+                        <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PRODUCTION JOURNEY ============ -->
+    <section class="section journey" aria-label="رحلة الإنتاج">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="رحلة الإنتاج" data-en="Production Journey" style="color: var(--accent-light);"></div>
+                <h2 class="section-title" data-ar="من البيضة إلى مائدتك في 6 مراحل" data-en="From Egg to Your Table in 6 Stages"></h2>
+                <p class="section-desc" data-ar="نتابع عملية إنتاج صارمة ومتكاملة تضمن وصول منتجاتنا بجودة مثالية وطازجة إلى عملائنا." data-en="We follow a strict and integrated production process ensuring our products reach customers in perfect quality and freshness."></p>
+            </div>
+
+            <div class="journey-timeline">
+                <div class="journey-item" data-aos="fade-up">
+                    <div class="journey-item-content">
+                        <div class="journey-item-number" data-ar="المرحلة 01" data-en="STAGE 01"></div>
+                        <h3 class="journey-item-title" data-ar="المفقس والحضانة" data-en="Hatchery & Incubation"></h3>
+                        <p class="journey-item-desc" data-ar="نستورد أفضل سلالات الكتاكيت ونحضنها في مفقسنا المتطور بظروف مثالية من الحرارة والرطوبة لضمان أعلى نسبة فقس وصحة." data-en="We import the finest chick breeds and incubate them in our advanced hatchery under ideal temperature and humidity conditions for maximum hatch rate and health."></p>
+                    </div>
+                    <div class="journey-item-dot"></div>
+                </div>
+
+                <div class="journey-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="journey-item-content">
+                        <div class="journey-item-number" data-ar="المرحلة 02" data-en="STAGE 02"></div>
+                        <h3 class="journey-item-title" data-ar="التربية والتسمين" data-en="Rearing & Fattening"></h3>
+                        <p class="journey-item-desc" data-ar="نربي الدواجن في مزارعنا الحديثة المجهزة بأنظمة تهوية وتحكم مناخي متقدمة، مع تغذية متوازنة بأعلاف طبيعية عالية الجودة." data-en="We raise poultry in our modern farms equipped with advanced ventilation and climate control systems, with balanced nutrition using high-quality natural feed."></p>
+                    </div>
+                    <div class="journey-item-dot"></div>
+                </div>
+
+                <div class="journey-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="journey-item-content">
+                        <div class="journey-item-number" data-ar="المرحلة 03" data-en="STAGE 03"></div>
+                        <h3 class="journey-item-title" data-ar="الذبح والتجهيز" data-en="Slaughtering & Processing"></h3>
+                        <p class="journey-item-desc" data-ar="عمليات ذبح آلية وفق الشريعة الإسلامية والمعايير الصحية الدولية، مع فحص بيطري دقيق لكل دجاجة على حدة." data-en="Automated slaughtering according to Islamic law and international health standards, with meticulous veterinary inspection of each chicken individually."></p>
+                    </div>
+                    <div class="journey-item-dot"></div>
+                </div>
+
+                <div class="journey-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="journey-item-content">
+                        <div class="journey-item-number" data-ar="المرحلة 04" data-en="STAGE 04"></div>
+                        <h3 class="journey-item-title" data-ar="التبريد السريع" data-en="Rapid Chilling"></h3>
+                        <p class="journey-item-desc" data-ar="تبريد فوري بعد الذبح باستخدام أنفاق تبريد متطورة للحفاظ على جودة اللحم وسلامته الغذائية ومنع التلف البكتيري." data-en="Immediate chilling after slaughter using advanced chilling tunnels to preserve meat quality, food safety, and prevent bacterial spoilage."></p>
+                    </div>
+                    <div class="journey-item-dot"></div>
+                </div>
+
+                <div class="journey-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="journey-item-content">
+                        <div class="journey-item-number" data-ar="المرحلة 05" data-en="STAGE 05"></div>
+                        <h3 class="journey-item-title" data-ar="التعبئة والتغليف" data-en="Packaging"></h3>
+                        <p class="journey-item-desc" data-ar="تعبئة احترافية في بيئة نظيفة ومعقمة باستخدام مواد تغليف غذائية آمنة مع بطاقات تعريفية تحتوي على كل المعلومات اللازمة." data-en="Professional packaging in a clean, sterilized environment using safe food-grade packaging materials with informative labeling containing all necessary details."></p>
+                    </div>
+                    <div class="journey-item-dot"></div>
+                </div>
+
+                <div class="journey-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="journey-item-content">
+                        <div class="journey-item-number" data-ar="المرحلة 06" data-en="STAGE 06"></div>
+                        <h3 class="journey-item-title" data-ar="التوزيع والتسليم" data-en="Distribution & Delivery"></h3>
+                        <p class="journey-item-desc" data-ar="أسطول شاحنات مبردة حديثة تضمن توصيل المنتجات طازجة ومبردة إلى جميع نقاط البيع في أسرع وقت ممكن." data-en="A modern fleet of refrigerated trucks ensuring fresh, chilled product delivery to all sales points in the shortest possible time."></p>
+                    </div>
+                    <div class="journey-item-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section section--soft" aria-label="لماذا تختارنا">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="مميزاتنا" data-en="Our Advantages"></div>
+                <h2 class="section-title" data-ar="لماذا يثق عملاؤنا بZimam.co?" data-en="Why Do Our Customers Trust Zimam?"></h2>
+                <p class="section-desc" data-ar="نجمع بين الخبرة العميقة والتقنية المتطورة والالتزام بالجودة لنقدم لكم أفضل منتجات الدواجن في السوق الليبي." data-en="We combine deep expertise, advanced technology, and quality commitment to deliver the best poultry products in the Libyan market."></p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h3 class="feature-title" data-ar="جودة معتمدة دولياً" data-en="Internationally Certified Quality"></h3>
+                    <p class="feature-desc" data-ar="حائزون على شهادات ISO وHACCP وشهادات الجودة والسلامة الغذائية من جهات اعتماد محلية ودولية مرموقة." data-en="Holders of ISO, HACCP, and food safety quality certificates from prestigious local and international accreditation bodies."></p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                    <h3 class="feature-title" data-ar="تغذية طبيعية 100%" data-en="100% Natural Nutrition"></h3>
+                    <p class="feature-desc" data-ar="نعتمد على أعلاف طبيعية من حبوب وبروتينات نباتية بدون هرمونات أو مضادات حيوية غير مشروعة لضمان لحم صحي وآمن." data-en="We rely on natural feed from grains and plant proteins without hormones or unauthorized antibiotics for healthy, safe meat."></p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fa-solid fa-temperature-low"></i></div>
+                    <h3 class="feature-title" data-ar="سلسلة تبريد متكاملة" data-en="Complete Cold Chain"></h3>
+                    <p class="feature-desc" data-ar="من لحظة الذبح وحتى التسليم، نحافظ على درجة حرارة مثالية عبر سلسلة تبريد لا تنقطع لضمان الطزاجة." data-en="From slaughter to delivery, we maintain ideal temperatures through an unbroken cold chain ensuring freshness."></p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3 class="feature-title" data-ar="تسليم سريع وموثوق" data-en="Fast & Reliable Delivery"></h3>
+                    <p class="feature-desc" data-ar="أسطولنا المكون من أكثر من 50 شاحنة مبردة يغطي جميع المدن الليبية مع التزام صارم بمواعيد التسليم." data-en="Our fleet of over 50 refrigerated trucks covers all Libyan cities with strict delivery time commitments."></p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fa-solid fa-flask"></i></div>
+                    <h3 class="feature-title" data-ar="مختبرات مجهزة" data-en="Equipped Laboratories"></h3>
+                    <p class="feature-desc" data-ar="مختبرات تحليل متخصصة تجري فحوصات دورية شاملة على الأعلاف والمياه والمنتجات النهائية لضمان الجودة." data-en="Specialized analysis laboratories conduct comprehensive periodic testing on feed, water, and final products to ensure quality."></p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="feature-title" data-ar="دعم فني متواصل" data-en="Continuous Technical Support"></h3>
+                    <p class="feature-desc" data-ar="فريق خدمة عملاء متخصص متاح على مدار الساعة لاستقبال طلباتكم والرد على استفساراتكم ومعالجة أي ملاحظات." data-en="A specialized customer service team available 24/7 to receive your orders, answer inquiries, and address any feedback."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FARM & PRODUCTS GALLERY ============ -->
+    <section class="section section--soft" id="gallery" aria-label="معرض المزارع والمنتجات">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="معرض المزارع والمنتجات" data-en="Farm & Products Gallery"></div>
+                <h2 class="section-title" data-ar="لمحات من عالم Zimam.co" data-en="Glimpses from Zimam's World"></h2>
+                <p class="section-desc" data-ar="نأخذكم في جولة بصرية داخل مزارعنا ومنتجاتنا لتتعرفوا على جودة ما نقدمه عن قرب." data-en="Take a visual tour inside our farms and products to discover up close the quality we deliver."></p>
+            </div>
+
+            <div class="farm-gallery-grid">
+                <!-- بطاقة 1: حظيرة دجاج -->
+                <div class="farm-gallery-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="farm-gallery-image">
+                        <img src="images/حضيرة دجاج.jpg" alt="مزارع Zimam.co المجهزة بتقنية حديثة" loading="lazy">
+                        <div class="farm-gallery-overlay">
+                            <i class="fa-solid fa-warehouse"></i>
+                        </div>
+                        <div class="farm-gallery-tag" data-ar="المزارع" data-en="Farms"></div>
+                    </div>
+                    <div class="farm-gallery-info">
+                        <h3 class="farm-gallery-title" data-ar="مزارع متطورة بتقنية حديثة" data-en="Modern Tech-Equipped Farms"></h3>
+                        <p class="farm-gallery-desc" data-ar="مزارعنا مجهزة بأحدث أنظمة التهوية والتكييف والتحكم الآلي لضمان بيئة مثالية لصحة الدجاج ونموه السليم." data-en="Our farms are equipped with the latest ventilation, air conditioning, and automated control systems to ensure an ideal environment for chicken health and proper growth."></p>
+                    </div>
+                </div>
+
+                <!-- بطاقة 2: دجاجة و فراخ حي -->
+                <div class="farm-gallery-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="farm-gallery-image">
+                        <img src="images/دجاج بالغ جاهز للذبح.jpg" alt="دجاج بالغ في مزارع Zimam.co" loading="lazy">
+                        <div class="farm-gallery-overlay">
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
+                        <div class="farm-gallery-tag" data-ar="التربية" data-en="Rearing"></div>
+                    </div>
+                    <div class="farm-gallery-info">
+                        <h3 class="farm-gallery-title" data-ar="تربية صحية وعناية فائقة" data-en="Healthy Rearing & Supreme Care"></h3>
+                        <p class="farm-gallery-desc" data-ar="نهتم بتربية الدجاج بأعلى معايير الرعاية البيطرية والتغذية الطبيعية المتوازنة منذ اليوم الأول لتقديم منتجات صحية وآمنة." data-en="We raise our chickens with the highest veterinary care and balanced natural nutrition standards from day one to deliver healthy and safe products."></p>
+                    </div>
+                </div>
+
+                <!-- بطاقة 3: دجاج مقطع -->
+                <div class="farm-gallery-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="farm-gallery-image">
+                        <img src="images/دجاج مقطع.png" alt="تقطيعات دجاج احترافية من Zimam.co" loading="lazy">
+                        <div class="farm-gallery-overlay">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="farm-gallery-tag" data-ar="التجهيز" data-en="Processing"></div>
+                    </div>
+                    <div class="farm-gallery-info">
+                        <h3 class="farm-gallery-title" data-ar="تقطيع احترافي وتجهيز دقيق" data-en="Professional Cuts & Precise Processing"></h3>
+                        <p class="farm-gallery-desc" data-ar="فريق متخصص يقوم بالتقطيع والتجهيز يدوياً وآلياً بدقة عالية لضمان منتجات بجودة ممتازة ومظهر احترافي يليق بمائدتكم." data-en="A specialized team handles cutting and processing manually and mechanically with high precision to ensure excellent quality products with a professional presentation worthy of your table."></p>
+                    </div>
+                </div>
+
+                <!-- بطاقة 4: دجاج مجمد -->
+                <div class="farm-gallery-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="farm-gallery-image">
+                        <img src="images/دجاج مجمد.jpg" alt="منتجات دجاج مجمدة من Zimam.co" loading="lazy">
+                        <div class="farm-gallery-overlay">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <div class="farm-gallery-tag" data-ar="التجميد" data-en="Freezing"></div>
+                    </div>
+                    <div class="farm-gallery-info">
+                        <h3 class="farm-gallery-title" data-ar="تجميد فوري للحفاظ على الجودة" data-en="Flash Freezing for Quality"></h3>
+                        <p class="farm-gallery-desc" data-ar="نستخدم تقنية التجميد السريع (IQF) للحفاظ على الطعم الطازج والقيمة الغذائية والقوام المثالي لأطول فترة تخزين ممكنة." data-en="We use Individual Quick Freezing (IQF) technology to preserve fresh taste, nutritional value, and ideal texture for the longest possible storage period."></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STATISTICS ============ -->
+    <section class="section stats-section" aria-label="إحصائيات">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-icon"><i class="fa-solid fa-warehouse"></i></div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="12">0</span>
+                    </div>
+                    <div class="stat-label" data-ar="مزرعة ومرفق إنتاجي" data-en="Farms & Production Facilities"></div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="50">0</span><span class="counter-suffix">M</span>
+                    </div>
+                    <div class="stat-label" data-ar="دجاجة منتجة سنوياً" data-en="Chickens Produced Annually"></div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="1500">0</span><span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label" data-ar="موظف وموظفة" data-en="Employees"></div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fa-solid fa-truck"></i></div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="50">0</span><span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label" data-ar="شاحنة مبردة" data-en="Refrigerated Trucks"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PRODUCTS SHOWCASE ============ -->
+    <section class="section" id="products" aria-label="منتجاتنا">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="منتجاتنا" data-en="Our Products"></div>
+                <h2 class="section-title" data-ar="تشكيلة متنوعة تلبي جميع الاحتياجات" data-en="A Diverse Range to Meet All Needs"></h2>
+                <p class="section-desc" data-ar="نقدم مجموعة شاملة من منتجات الدجاج الطازج والمبرد والمجمد بأشكال وتقطيعات مختلفة تناسب المطاعم والفنادق والأسواق والمستهلكين." data-en="We offer a comprehensive range of fresh, chilled, and frozen chicken products in various cuts and forms suitable for restaurants, hotels, markets, and consumers."></p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="product-image">
+                        <img src="images/دجاج طازج.jpg" alt="دجاج كامل طازج" loading="lazy">
+                        <div class="product-tag" data-ar="طازج" data-en="Fresh"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-ar="دجاج كامل طازج" data-en="Whole Fresh Chicken"></h3>
+                        <p class="product-desc" data-ar="دجاج كامل طازج يومياً من مزارعنا مباشرة، بوزن وتدرج منتظم، جاهز للطبخ الفوري." data-en="Daily fresh whole chicken directly from our farms, with consistent weight and grading, ready for immediate cooking."></p>
+                        <a href="products.html" class="product-link">
+                            <span data-ar="التفاصيل" data-en="Details"></span>
+                            <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <img src="images/دجاج مقطع.png" alt="دجاج مبرد مقطع" loading="lazy">
+                        <div class="product-tag" data-ar="مبرد" data-en="Chilled"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-ar="دجاج مبرد مقطع" data-en="Chilled Cut Chicken"></h3>
+                        <p class="product-desc" data-ar="تقطيعات متنوعة مبردة تشمل الصدور والأفخاذ والأجنحة والسيقان معبأة بنظافة وسلامة." data-en="Various chilled cuts including breasts, thighs, wings, and drumsticks, cleanly and safely packaged."></p>
+                        <a href="products.html" class="product-link">
+                            <span data-ar="التفاصيل" data-en="Details"></span>
+                            <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="images/دجاج مجمد.jpg" alt="دجاج مجمد" loading="lazy">
+                        <div class="product-tag" data-ar="مجمد" data-en="Frozen"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-ar="دجاج مجمد" data-en="Frozen Chicken"></h3>
+                        <p class="product-desc" data-ar="منتجات دجاج مجمدة بسرعة بتقنية التجميد الفوري للحفاظ على القيمة الغذائية والطعم والقوام." data-en="Quick-frozen chicken products using flash-freezing technology to preserve nutritional value, taste, and texture."></p>
+                        <a href="products.html" class="product-link">
+                            <span data-ar="التفاصيل" data-en="Details"></span>
+                            <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <img src="images/دجاج مقطع.png" alt="منتجات معالجة" loading="lazy">
+                        <div class="product-tag" data-ar="معالج" data-en="Processed"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-ar="منتجات معالجة" data-en="Processed Products"></h3>
+                        <p class="product-desc" data-ar="ناجتس وأصابع الدجاج وبرجر الدجاج ومنتجات جاهزة للقلي والطبخ بوصفات شهية ومتسقة." data-en="Nuggets, chicken strips, chicken burgers, and ready-to-cook products with delicious and consistent recipes."></p>
+                        <a href="products.html" class="product-link">
+                            <span data-ar="التفاصيل" data-en="Details"></span>
+                            <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top: var(--space-12);" data-aos="fade-up">
+                <a href="products.html" class="btn btn--outline">
+                    <span data-ar="عرض جميع المنتجات" data-en="View All Products"></span>
+                    <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ QUALITY STANDARDS ============ -->
+    <section class="section section--soft" id="quality" aria-label="معايير الجودة">
+        <div class="container">
+            <div class="quality-grid">
+                <div class="quality-image" data-aos="fade-right">
+                    <img src="images/حضيرة دجاج.jpg" alt="مختبرات ضبط الجودة" loading="lazy">
+                </div>
+
+                <div class="quality-text" data-aos="fade-left">
+                    <div class="section-label" data-ar="الجودة والسلامة" data-en="Quality & Safety"></div>
+                    <h2 data-ar="معايير جودة صارمة في كل خطوة" data-en="Strict Quality Standards at Every Step"></h2>
+                    <p data-ar="في Zimam.co، الجودة ليست مجرد قسم بل هي ثقافة مؤسسية متأصلة في كل عملياتنا من المزرعة وحتى المنتج النهائي." data-en="At Zimam, quality is not just a department — it's an institutional culture embedded in all our operations from farm to final product."></p></p>
+
+                    <div class="quality-list">
+                        <div class="quality-list-item">
+                            <div class="quality-list-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="quality-list-text">
+                                <h4 data-ar="نظام HACCP متكامل" data-en="Complete HACCP System"></h4>
+                                <p data-ar="تطبيق نظام تحليل المخاطر ونقاط التحكم الحرجة في جميع مراحل الإنتاج لمنع أي خطر غذائي." data-en="Applying Hazard Analysis and Critical Control Points system at all production stages to prevent any food hazard."></p>
+                            </div>
+                        </div>
+                        <div class="quality-list-item">
+                            <div class="quality-list-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="quality-list-text">
+                                <h4 data-ar="فحص بيطري شامل" data-en="Comprehensive Veterinary Inspection"></h4>
+                                <p data-ar="أطباء بيطريون متخصصون يجرون فحوصات قبل وبعد الذبح لضمان سلامة كل منتج." data-en="Specialized veterinarians conduct pre and post-slaughter inspections to ensure the safety of every product."></p>
+                            </div>
+                        </div>
+                        <div class="quality-list-item">
+                            <div class="quality-list-icon"><i class="fa-solid fa-check"></i></div>
+                            <div class="quality-list-text">
+                                <h4 data-ar="تتبع المنتج من المزرعة" data-en="Farm-to-Table Traceability"></h4>
+                                <p data-ar="نظام تتبع رقمي متكامل يتيح تتبع كل منتج من الدفعة والقطيع إلى نقطة البيع." data-en="An integrated digital traceability system allowing tracking of every product from batch and flock to point of sale."></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quality-badges">
+                        <div class="quality-badge"><i class="fa-solid fa-certificate"></i> ISO 22000</div>
+                        <div class="quality-badge"><i class="fa-solid fa-shield-halved"></i> HACCP</div>
+                        <div class="quality-badge"><i class="fa-solid fa-leaf"></i> Halal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SUSTAINABILITY ============ -->
+    <section class="section sustainability" id="sustainability" aria-label="الاستدامة">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="الاستدامة" data-en="Sustainability"></div>
+                <h2 class="section-title" data-ar="نمو مسؤول نحو مستقبل أفضل" data-en="Responsible Growth for a Better Future"></h2>
+                <p class="section-desc" data-ar="نؤمن بأن النجاح الحقيقي هو الذي يراعي البيئة والمجتمع. نعمل بجد لتقليل أثرنا البيئي وتحسين مساهمتنا في التنمية المستدامة." data-en="We believe true success is one that considers the environment and society. We work hard to reduce our environmental footprint and improve our contribution to sustainable development."></p>
+            </div>
+
+            <div class="sustain-grid">
+                <div class="sustain-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="sustain-icon-wrap"><i class="fa-solid fa-solar-panel"></i></div>
+                    <h3 data-ar="طاقة متجددة" data-en="Renewable Energy"></h3>
+                    <p data-ar="نستخدم الألواح الشمسية في تشغيل مرافقنا لتقليل الاعتماد على الوقود الأحفوري وخفض انبعاثات الكربون." data-en="We use solar panels to power our facilities, reducing fossil fuel dependence and lowering carbon emissions."></p>
+                </div>
+                <div class="sustain-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sustain-icon-wrap"><i class="fa-solid fa-recycle"></i></div>
+                    <h3 data-ar="إدارة النفايات" data-en="Waste Management"></h3>
+                    <p data-ar="نحول مخلفات الإنتاج إلى أسمدة عضوية ومواد ثانوية مفيدة في إطار اقتصاد دائري متكامل." data-en="We convert production waste into organic fertilizers and useful by-products within an integrated circular economy framework."></p>
+                </div>
+                <div class="sustain-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sustain-icon-wrap"><i class="fa-solid fa-droplet"></i></div>
+                    <h3 data-ar="ترشيد المياه" data-en="Water Conservation"></h3>
+                    <p data-ar="أنظمة ري ذكية وتدوير مياه السقي لتقليل استهلاك المياه بنسبة تصل إلى 40% مقارنة بالطرق التقليدية." data-en="Smart irrigation systems and water recycling reduce water consumption by up to 40% compared to traditional methods."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PARTNERS ============ -->
+    <section class="section" aria-label="شركاؤنا">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="شركاء النجاح" data-en="Success Partners"></div>
+                <h2 class="section-title" data-ar="نفخر بثقة أكبر المؤسسات في ليبيا" data-en="Proud to Be Trusted by Libya's Largest Institutions"></h2>
+                <p class="section-desc" data-ar="نخدم باقة واسعة من القطاعات تشمل الفنادق الفاخرة والمطاعم الراقية والأسواق الكبرى والمجمعات التجارية." data-en="We serve a wide range of sectors including luxury hotels, fine restaurants, supermarkets, and commercial complexes."></p>
+            </div>
+        </div>
+        <div style="overflow:hidden; padding: var(--space-8) 0;" aria-hidden="true">
+            <div class="partners-track">
+                <div class="partner-logo">Radisson BLU</div>
+                <div class="partner-logo">Corinthia</div>
+                <div class="partner-logo">Al-Madina</div>
+                <div class="partner-logo">Tripoli Mall</div>
+                <div class="partner-logo">Green Plaza</div>
+                <div class="partner-logo">Assaraya</div>
+                <div class="partner-logo">Wessam</div>
+                <div class="partner-logo">Khadra</div>
+                <div class="partner-logo">Radisson BLU</div>
+                <div class="partner-logo">Corinthia</div>
+                <div class="partner-logo">Al-Madina</div>
+                <div class="partner-logo">Tripoli Mall</div>
+                <div class="partner-logo">Green Plaza</div>
+                <div class="partner-logo">Assaraya</div>
+                <div class="partner-logo">Wessam</div>
+                <div class="partner-logo">Khadra</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section--soft" aria-label="آراء العملاء">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="آراء العملاء" data-en="Testimonials"></div>
+                <h2 class="section-title" data-ar="ماذا يقول شركاؤنا عنا" data-en="What Our Partners Say About Us"></h2>
+            </div>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text" data-ar="Zimam.co هي شريكنا الاستراتيجي منذ أكثر من 10 سنوات. الجودة ثابتة والتسليم دائماً في الموعد. نثق بهم تماماً في تغذية ضيوفنا بأفضل المنتجات." data-en="Zimam Co. has been our strategic partner for over 10 years. Quality is consistent and delivery is always on time. We completely trust them to feed our guests the best products."></p></p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">م</div>
+                                <div>
+                                    <div class="testimonial-name" data-ar="محمود الطرابلسي" data-en="Mahmoud Al-Trabelsi"></div>
+                                    <div class="testimonial-role" data-ar="مدير مشتريات - فندق خمسة نجوم" data-en="Procurement Manager - Five-Star Hotel"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text" data-ar="كصاحب سلسلة مطاعم، الجودة والاتساق هما الأهم. Zimam.co تقدم لنا دجاجاً بجودة لا تتذبذب وأسعار تنافسية. خدمة العملاء استثنائية." data-en="As a restaurant chain owner, quality and consistency are paramount. Zimam provides us with consistently high-quality chicken at competitive prices. Customer service is exceptional."></p></p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">ع</div>
+                                <div>
+                                    <div class="testimonial-name" data-ar="عمر البنعلي" data-en="Omar Al-Benali"></div>
+                                    <div class="testimonial-role" data-ar="مالك سلسلة مطاعم" data-en="Restaurant Chain Owner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text" data-ar="في سوبرماركتنا، منتجات Zimam.co هي الأكثر طلباً من العملاء. التغليف ممتاز والطزاجة واضحة. نسبة الإرجاع شبه معدومة." data-en="In our supermarket, Zimam products are the most requested by customers. Excellent packaging and visible freshness. Return rate is nearly zero."></p></p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">ف</div>
+                                <div>
+                                    <div class="testimonial-name" data-ar="فاطمة المصراتي" data-en="Fatima Al-Misrati"></div>
+                                    <div class="testimonial-role" data-ar="مديرة شراء - سوبرماركت كبير" data-en="Purchase Manager - Large Supermarket"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination" style="margin-top: var(--space-8);"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LATEST NEWS ============ -->
+    <section class="section" id="news" aria-label="آخر الأخبار">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="آخر الأخبار" data-en="Latest News"></div>
+                <h2 class="section-title" data-ar="ابقَ على اطلاع بأحدث تطوراتنا" data-en="Stay Updated with Our Latest Developments"></h2>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="news-image">
+                        <img src="images/حضيرة دجاج.jpg" alt="افتتاح مصنع جديد" loading="lazy">
+                    </div>
+                    <div class="news-body">
+                        <div class="news-meta">
+                            <span class="news-meta-item"><i class="fa-regular fa-calendar"></i> 2024/12/15</span>
+                            <span class="news-meta-item"><i class="fa-regular fa-folder"></i> <span data-ar="توسعات" data-en="Expansion"></span></span>
+                        </div>
+                        <h3 class="news-title" data-ar="Zimam.co تفتتح أكبر مصنع لتجهيز الدواجن في غرب ليبيا" data-en="Zimam Opens the Largest Poultry Processing Plant in Western Libya"></h3>
+                        <p class="news-excerpt" data-ar="استثمرت Zimam.co 30 مليون دينار في مصنع جديد بطاقة إنتاجية تبلغ 20 ألف دجاجة يومياً مجهز بأحدث التقنيات الأوروبية." data-en="Zimam invested 30 million dinars in a new plant with a daily production capacity of 20,000 chickens, equipped with the latest European technologies."></p></p>
+                        <a href="#" class="news-link">
+                            <span data-ar="اقرأ المزيد" data-en="Read More"></span>
+                            <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-image">
+                        <img src="images/zimam.jpg" alt="شهادة ISO" loading="lazy">
+                    </div>
+                    <div class="news-body">
+                        <div class="news-meta">
+                            <span class="news-meta-item"><i class="fa-regular fa-calendar"></i> 2024/11/20</span>
+                            <span class="news-meta-item"><i class="fa-regular fa-folder"></i> <span data-ar="جودة" data-en="Quality"></span></span>
+                        </div>
+                        <h3 class="news-title" data-ar="حصول Zimam.co على شهادة ISO 22000 لنظام إدارة السلامة الغذائية" data-en="Zimam Obtains ISO 22000 Food Safety Management System Certificate"></h3>
+                        <p class="news-excerpt" data-ar="تم منح الشركة شهادة ISO 22000 بعد تقييم شامل أثبت كفاءة منظومة السلامة الغذائية في جميع مراحل الإنتاج." data-en="The company was awarded ISO 22000 after a comprehensive assessment proving the efficiency of the food safety system across all production stages."></p>
+                        <a href="#" class="news-link">
+                            <span data-ar="اقرأ المزيد" data-en="Read More"></span>
+                            <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="news-image">
+                        <img src="images/حضيرة دجاج.jpg" alt="مشروع الطاقة الشمسية" loading="lazy">
+                    </div>
+                    <div class="news-body">
+                        <div class="news-meta">
+                            <span class="news-meta-item"><i class="fa-regular fa-calendar"></i> 2024/10/05</span>
+                            <span class="news-meta-item"><i class="fa-regular fa-folder"></i> <span data-ar="استدامة" data-en="Sustainability"></span></span>
+                        </div>
+                        <h3 class="news-title" data-ar="Zimam.co تطلق مشروع الطاقة الشمسية الأكبر في القطاع" data-en="Zimam Launches the Largest Solar Energy Project in the Sector"></h3>
+                        <p class="news-excerpt" data-ar="مشروع طاقة شمسية بقدرة 5 ميجاوات لتشغيل المزارع والمصانع مما يقلل الانبعاثات الكربونية بنسبة 35%." data-en="A 5-megawatt solar energy project to power farms and factories, reducing carbon emissions by 35%."></p>
+                        <a href="#" class="news-link">
+                            <span data-ar="اقرأ المزيد" data-en="Read More"></span>
+                            <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA SECTION ============ -->
+    <section class="section cta-section" id="contact" aria-label="اتصل بنا">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title" data-ar="جاهز للشراكة مع Zimam.co?" data-en="Ready to Partner with Zimam?"></h2>
+                <p class="cta-desc" data-ar="سواء كنت تدير مطعماً أو فندقاً أو سوقاً أو مجمعاً تجارياً، فريقنا جاهز لتقديم حلول مخصصة تناسب احتياجاتك." data-en="Whether you manage a restaurant, hotel, market, or commercial complex, our team is ready to provide customized solutions for your needs."></p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn--accent btn--lg">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span data-ar="تواصل معنا الآن" data-en="Contact Us Now"></span>
+                    </a>
+                    <a href="https://wa.me/218913817515" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span data-ar="واتساب" data-en="WhatsApp"></span>
+                    </a>
+                    <a href="https://t.me/+218913817515" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span data-ar="تيليجرام" data-en="Telegram"></span>
+                    </a>
+                </div>
+                <div class="cta-contact-info">
+                    <div class="cta-contact-item">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    <span class="phone-number" dir="ltr">091 381 7515</span>
+                    </div>
+                    <div class="cta-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>zimamfarmingcompany@gmail.com</span>
+                    </div>
+                    <div class="cta-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-ar="طرابلس - ليبيا" data-en="Tripoli - Libya"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="images/zimam.jpg" alt="Zimam.co" style="height: 50px; width: auto; border: 2px solid #FFA500;">
+                        <span style="font-size: 18px; font-weight: bold; color: #fff;">Zimam.co</span>
+                    </div>
+                    <p class="footer-about" data-ar="شركة ليبية رائدة متخصصة في إنتاج وتجهيز وتوزيع الدجاج الطازج والمبرد والمجمد بأعلى معايير الجودة والسلامة الغذائية منذ 2005." data-en="A leading Libyan company specialized in producing, processing, and distributing fresh, chilled, and frozen chicken with the highest quality and food safety standards since 2005."></p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="لينكدإن"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links"></h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link" data-ar="الرئيسية" data-en="Home"></a>
+                        <a href="about.html" class="footer-link" data-ar="من نحن" data-en="About Us"></a>
+                        <a href="products.html" class="footer-link" data-ar="المنتجات" data-en="Products"></a>
+                        <a href="#quality" class="footer-link" data-ar="الجودة والسلامة" data-en="Quality & Safety"></a>
+                        <a href="#sustainability" class="footer-link" data-ar="الاستدامة" data-en="Sustainability"></a>
+                        <a href="#news" class="footer-link" data-ar="الأخبار" data-en="News"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-ar="خدماتنا" data-en="Our Services"></h4>
+                    <div class="footer-links">
+                        <a href="products.html" class="footer-link" data-ar="توريد المطاعم والفنادق" data-en="Restaurant & Hotel Supply"></a>
+                        <a href="products.html" class="footer-link" data-ar="توريد الأسواق والمجمعات" data-en="Market & Mall Supply"></a>
+                        <a href="products.html" class="footer-link" data-ar="منتجات بالجملة" data-en="Wholesale Products"></a>
+                        <a href="products.html" class="footer-link" data-ar="قطع مخصصة حسب الطلب" data-en="Custom Cuts on Demand"></a>
+                        <a href="careers.html" class="footer-link" data-ar="التوظيف" data-en="Careers"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us"></h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-ar="طرابلس، ليبيا - منطقة العزيزية" data-en="Tripoli, Libya - Al-Aziziya Area"></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="phone-number" dir="ltr">091 381 7515</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span class="phone-number" dir="ltr">091 525 4120</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>zimamfarmingcompany@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span data-ar="الأحد - الخميس: 7 ص - 6 م" data-en="Sun - Thu: 7 AM - 6 PM"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span data-ar="© 2024 Zimam.co. جميع الحقوق محفوظة." data-en="© 2024 Zimam Co. All Rights Reserved."></span>
+                <span data-ar="تصميم وتطوير بمعايير عالمية" data-en="Designed & Developed with Global Standards"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ WHATSAPP & TELEGRAM FLOAT BUTTONS ============ -->
+    <a href="https://wa.me/218913817515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب" style="left: 30px;">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://t.me/+218913817515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر تيليجرام" style="left: 100px;">
+        <i class="fa-brands fa-telegram"></i>
+    </a>
+
+    <!-- ============ EXTERNAL LIBRARIES ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- ============ MAIN JAVASCRIPT ============ -->
+    <script src="js/language.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/swiper-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

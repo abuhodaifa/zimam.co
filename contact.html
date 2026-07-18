@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>اتصل بنا | Zimam.co</title>
+    <meta name="description" content="تواصل مع شركة Zimam.co - نحن هنا للإجابة على استفساراتكم وتلبية احتياجاتكم من الدجاج الطازج والمبرد والمجمد في ليبيا.">
+    <meta name="keywords" content="اتصل بنا, تواصل, Zimam.co, دواجن ليبيا, دجاج طازج, طرابلس">
+    <meta name="author" content="Zimam Co.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zimam-co.com/contact.html">
+    <link rel="icon" type="image/jpg" href="images/zimam.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اتصل بنا | Zimam.co">
+    <meta property="og:description" content="نحن هنا للإجابة على استفساراتكم وتلبية احتياجاتكم من الدجاج الطازج والمبرد والمجمد.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://zimam-co.com/contact.html">
+    <meta property="og:locale" content="ar_LY">
+    <meta property="og:site_name" content="Zimam.co">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="اتصل بنا | Zimam.co">
+    <meta name="twitter:description" content="نحن هنا للإجابة على استفساراتكم وتلبية احتياجاتكم.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop">
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "اتصل بنا | Zimam.co",
+        "url": "https://zimam-co.com/contact.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Zimam.co",
+            "alternateName": "Zimam Co.",
+            "telephone": "+218-91-381-7515",
+            "email": "zimamfarmingcompany@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "LY",
+                "addressLocality": "طرابلس",
+                "streetAddress": "منطقة العزيزية، الطريق الدائري"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+                "opens": "07:00",
+                "closes": "18:00"
+            }
+        }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- ==================== CUSTOM CSS ==================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <!-- WhatsApp Float Button -->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            z-index: 1000;
+            transition: transform 0.3s, box-shadow 0.3s;
+            direction: ltr;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37,211,102,0.6);
+        }
+        [data-lang="en"] .whatsapp-float {
+            left: auto;
+            right: 30px;
+        }
+        @media (max-width: 480px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ LOADING SCREEN ============ -->
+    <div class="loader" id="loader" role="status" aria-label="جاري التحميل">
+        <div class="loader-logo">Zimam.co<span>.</span></div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill" id="loaderBar"></div>
+        </div>
+        <div class="loader-text" data-ar="جاري تحميل الموقع..." data-en="Loading..."></div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="header-logo" aria-label="Zimam.co" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="images/zimam.jpg" alt="Zimam.co" style="height: 48px; width: auto; border: 2px solid #FFA500;">
+                    <span style="font-size: 18px; font-weight: bold; color: #000;">Zimam.co</span>
+                </a>
+
+                <nav class="nav" id="mainNav" role="navigation" aria-label="القائمة الرئيسية">
+                    <a href="index.html#home" class="nav-link" data-ar="الرئيسية" data-en="Home"></a>
+                    <a href="index.html#about" class="nav-link" data-ar="من نحن" data-en="About"></a>
+                    <a href="index.html#products" class="nav-link" data-ar="المنتجات" data-en="Products"></a>
+                    <a href="index.html#quality" class="nav-link" data-ar="الجودة" data-en="Quality"></a>
+                    <a href="index.html#sustainability" class="nav-link" data-ar="الاستدامة" data-en="Sustainability"></a>
+                    <a href="index.html#news" class="nav-link" data-ar="الأخبار" data-en="News"></a>
+                    <a href="contact.html" class="nav-link is-active" data-ar="اتصل بنا" data-en="Contact"></a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" id="langToggle" aria-label="تبديل اللغة">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="langLabel">EN</span>
+                    </button>
+                    <a href="contact.html#contactForm" class="nav-cta" data-ar="اطلب الآن" data-en="Order Now"></a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="القائمة الجانبية">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="إغلاق القائمة">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html#home" class="nav-link" data-ar="الرئيسية" data-en="Home" data-mobile-nav></a>
+        <a href="index.html#about" class="nav-link" data-ar="من نحن" data-en="About" data-mobile-nav></a>
+        <a href="index.html#products" class="nav-link" data-ar="المنتجات" data-en="Products" data-mobile-nav></a>
+        <a href="index.html#quality" class="nav-link" data-ar="الجودة" data-en="Quality" data-mobile-nav></a>
+        <a href="index.html#sustainability" class="nav-link" data-ar="الاستدامة" data-en="Sustainability" data-mobile-nav></a>
+        <a href="index.html#news" class="nav-link" data-ar="الأخبار" data-en="News" data-mobile-nav></a>
+        <a href="contact.html" class="nav-link is-active" data-ar="اتصل بنا" data-en="Contact" data-mobile-nav></a>
+    </div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1 data-ar="اتصل بنا" data-en="Contact Us"></h1>
+            <p data-ar="نحن هنا للإجابة على استفساراتكم وتلبية احتياجاتكم" data-en="We're Here to Answer Your Questions and Meet Your Needs"></p>
+            <div class="breadcrumb">
+                <a href="index.html" data-ar="الرئيسية" data-en="Home"></a>
+                <span>/</span>
+                <span data-ar="اتصل بنا" data-en="Contact Us"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section" id="contact" aria-label="تواصل معنا">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left: Contact Info Card -->
+                <div class="contact-info-card" data-aos="fade-right">
+                    <h3 data-ar="معلومات التواصل" data-en="Contact Information"></h3>
+
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4 data-ar="العنوان" data-en="Address"></h4>
+                            <p data-ar="طرابلس، ليبيا - منطقة العزيزية، الطريق الدائري" data-en="Tripoli, Libya - Al-Aziziya Area, Ring Road"></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4 data-ar="الهاتف" data-en="Phone"></h4>
+                                <p class="phone-number" dir="ltr">091 381 7515</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <div>
+                                <h4 data-ar="الجوال" data-en="Mobile"></h4>
+                                <p class="phone-number" dir="ltr">091 525 4120</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4 data-ar="البريد الإلكتروني" data-en="Email"></h4>
+                            <p>zimamfarmingcompany@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4 data-ar="ساعات العمل" data-en="Working Hours"></h4>
+                            <p data-ar="الأحد - الخميس: 7:00 ص - 6:00 م" data-en="Sunday - Thursday: 7:00 AM - 6:00 PM"></p>
+                        </div>
+                    </div>
+
+                    <div class="footer-social" style="margin-top: var(--space-6);">
+                        <a href="#" class="footer-social-link" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="لينكدإن"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form Card -->
+                <div class="contact-form-card" data-aos="fade-left">
+                    <h3 data-ar="أرسل لنا رسالة" data-en="Send Us a Message"></h3>
+                    <p data-ar="سنرد عليك في أقرب وقت ممكن" data-en="We'll get back to you as soon as possible"></p>
+
+                    <div class="form-success" id="formSuccess">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span data-ar="تم تجهيز رسالتك في واتساب. اضغط إرسال لإكمال العملية." data-en="Your message is ready in WhatsApp. Press Send to complete."></span>
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" data-ar="الاسم الكامل" data-en="Full Name"></label>
+                                <input type="text" class="form-input" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" data-ar="رقم الهاتف" data-en="Phone Number"></label>
+                                <input type="tel" class="form-input" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" data-ar="البريد الإلكتروني" data-en="Email"></label>
+                                <input type="email" class="form-input" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" data-ar="نوع الخدمة" data-en="Service Type"></label>
+                                <select class="form-select" name="service">
+                                    <option data-ar="توريد مطاعم وفنادق" data-en="Restaurant & Hotel Supply"></option>
+                                    <option data-ar="توريد أسواق ومجمعات" data-en="Market & Mall Supply"></option>
+                                    <option data-ar="منتجات بالجملة" data-en="Wholesale Products"></option>
+                                    <option data-ar="قطع مخصصة" data-en="Custom Cuts"></option>
+                                    <option data-ar="أخرى" data-en="Other"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-ar="الرسالة" data-en="Message"></label>
+                            <textarea class="form-textarea" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-ar="إرسال الرسالة" data-en="Send Message"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAP SECTION ============ -->
+    <section class="section map-section" aria-label="موقعنا على الخريطة">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34150.5847354!2d13.1713!3d32.8872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a892d4e5c1e0f3%3A0x6f4e3d8e4c1b7a5!2sTripoli%2C%20Libya!5e0!3m2!1sen!2sly!4v1700000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع Zimam.co - طرابلس، ليبيا"></iframe>
+        </div>
+    </section>
+
+    <!-- ============ WHATSAPP CTA ============ -->
+    <section class="section section--soft cta-section--light" aria-label="تواصل عبر واتساب">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up" style="padding: var(--space-10); text-align: center;">
+                <div class="section-label" data-ar="تواصل سريع" data-en="Quick Contact"></div>
+                <h2 class="cta-title" data-ar="تواصل معنا عبر واتساب" data-en="Reach Us on WhatsApp"></h2>
+                <p class="cta-desc" data-ar="للطلبات السريعة والاستفسارات الفورية، فريقنا جاهز للرد عليك مباشرة عبر واتساب." data-en="For quick orders and instant inquiries, our team is ready to respond directly via WhatsApp."></p>
+                <div class="cta-actions">
+                    <a href="https://wa.me/218913817515" class="btn btn--accent btn--lg" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span data-ar="مراسلتنا على واتساب" data-en="Message Us on WhatsApp"></span>
+                    </a>
+                    <a href="https://t.me/+218913817515" class="btn btn--accent btn--lg" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span data-ar="تواصل عبر تيليجرام" data-en="Reach Us on Telegram"></span>
+                    </a>
+                    <a href="tel:+218913817515" class="btn btn--ghost btn--lg">
+                        <i class="fa-solid fa-phone"></i>
+                        <span data-ar="اتصل مباشرة" data-en="Call Directly"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="images/zimam.jpg" alt="Zimam.co" style="height: 50px; width: auto; border: 2px solid #FFA500;">
+                        <span style="font-size: 18px; font-weight: bold; color: #fff;">Zimam.co</span>
+                    </div>
+                    <p class="footer-about" data-ar="شركة ليبية رائدة متخصصة في إنتاج وتجهيز وتوزيع الدجاج الطازج والمبرد والمجمد بأعلى معايير الجودة والسلامة الغذائية منذ 2005." data-en="A leading Libyan company specialized in producing, processing, and distributing fresh, chilled, and frozen chicken with the highest quality and food safety standards since 2005."></p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="لينكدإن"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links"></h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link" data-ar="الرئيسية" data-en="Home"></a>
+                        <a href="about.html" class="footer-link" data-ar="من نحن" data-en="About Us"></a>
+                        <a href="products.html" class="footer-link" data-ar="المنتجات" data-en="Products"></a>
+                        <a href="index.html#quality" class="footer-link" data-ar="الجودة والسلامة" data-en="Quality & Safety"></a>
+                        <a href="index.html#sustainability" class="footer-link" data-ar="الاستدامة" data-en="Sustainability"></a>
+                        <a href="index.html#news" class="footer-link" data-ar="الأخبار" data-en="News"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-ar="خدماتنا" data-en="Our Services"></h4>
+                    <div class="footer-links">
+                        <a href="products.html" class="footer-link" data-ar="توريد المطاعم والفنادق" data-en="Restaurant & Hotel Supply"></a>
+                        <a href="products.html" class="footer-link" data-ar="توريد الأسواق والمجمعات" data-en="Market & Mall Supply"></a>
+                        <a href="products.html" class="footer-link" data-ar="منتجات بالجملة" data-en="Wholesale Products"></a>
+                        <a href="products.html" class="footer-link" data-ar="قطع مخصصة حسب الطلب" data-en="Custom Cuts on Demand"></a>
+                        <a href="careers.html" class="footer-link" data-ar="التوظيف" data-en="Careers"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us"></h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-ar="طرابلس، ليبيا - منطقة العزيزية" data-en="Tripoli, Libya - Al-Aziziya Area"></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="phone-number" dir="ltr">091 381 7515</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span class="phone-number" dir="ltr">091 525 4120</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>zimamfarmingcompany@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span data-ar="الأحد - الخميس: 7 ص - 6 م" data-en="Sun - Thu: 7 AM - 6 PM"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span data-ar="© 2024 Zimam.co. جميع الحقوق محفوظة." data-en="© 2024 Zimam Co. All Rights Reserved."></span>
+                <span data-ar="تصميم وتطوير بمعايير عالمية" data-en="Designed & Developed with Global Standards"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ WHATSAPP & TELEGRAM FLOAT BUTTONS ============ -->
+    <a href="https://wa.me/218913817515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب" style="left: 30px;">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://t.me/+218913817515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر تيليجرام" style="left: 100px;">
+        <i class="fa-brands fa-telegram"></i>
+    </a>
+
+    <!-- ============ EXTERNAL LIBRARIES ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- ============ MAIN JAVASCRIPT ============ -->
+    <script src="js/language.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/swiper-config.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- ============ CONTACT FORM HANDLER ============ -->
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const whatsappNumber = '218913817515';
+        const whatsappMessage = [
+            'طلب جديد من موقع Zimam.co',
+            '',
+            'الاسم: ' + formData.get('name'),
+            'رقم الهاتف: ' + formData.get('phone'),
+            'البريد الإلكتروني: ' + formData.get('email'),
+            'نوع الخدمة: ' + formData.get('service'),
+            'الرسالة: ' + formData.get('message')
+        ].join('\n');
+
+        const whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(whatsappMessage);
+        const whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
+        // Fallback for browsers that block opening a new tab.
+        if (!whatsappWindow) {
+            window.location.href = whatsappUrl;
+        }
+
+        document.getElementById('formSuccess').classList.add('is-visible');
+        this.reset();
+        setTimeout(() => {
+            document.getElementById('formSuccess').classList.remove('is-visible');
+        }, 5000);
+    });
+    </script>
+</body>
+</html>
