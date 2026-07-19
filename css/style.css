@@ -1,0 +1,270 @@
+/* ZIMAM POULTRY - style.css */
+
+/* ============================================
+   DESIGN SYSTEM - CSS CUSTOM PROPERTIES
+   ============================================ */
+:root {
+    /* Colors */
+    --primary: #0F5132;
+    --primary-light: #1a7a4c;
+    --primary-dark: #0a3d26;
+    --secondary: #2E7D32;
+    --secondary-light: #4CAF50;
+    --accent: #F9A826;
+    --accent-light: #FFD54F;
+    --accent-dark: #E68A00;
+    --bg: #FFFFFF;
+    --bg-soft: #F8FAF5;
+    --bg-warm: #FDF8F0;
+    --dark: #1A1A1A;
+    --dark-soft: #2D2D2D;
+    --text: #333333;
+    --text-light: #666666;
+    --text-muted: #999999;
+    --border: #E8E8E8;
+    --border-light: #F0F0F0;
+    --success: #4CAF50;
+    --error: #E53935;
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+    --font-ar: 'Cairo', sans-serif;
+    --font-en: 'Inter', sans-serif;
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.5rem;
+    --fs-4xl: 3rem;
+    --fs-5xl: 3.5rem;
+    --fs-6xl: 4.5rem;
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+    --lh-tight: 1.2;
+    --lh-normal: 1.6;
+    --lh-relaxed: 1.8;
+    --ls-tight: -0.02em;
+    --ls-normal: 0;
+    --ls-wide: 0.05em;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+    --shadow-xl: 0 16px 48px rgba(0,0,0,0.16);
+    --shadow-glow: 0 0 40px rgba(15,81,50,0.15);
+    --shadow-accent: 0 8px 30px rgba(249,168,38,0.25);
+
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Z-Index */
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-tooltip: 600;
+    --z-loading: 9999;
+
+    /* Container */
+    --container-max: 1340px;
+    --container-narrow: 900px;
+    --container-padding: 1.5rem;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+body {
+    font-family: var(--font-ar);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    color: var(--text);
+    background-color: var(--bg);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[data-lang="en"] body {
+    font-family: var(--font-en);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-base);
+}
+
+/* Keep phone numbers in their natural left-to-right order inside Arabic text. */
+.phone-number,
+[dir="ltr"] {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Selection */
+::selection {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-soft);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: var(--radius-full);
+}
+
+/* Focus Visible */
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* ============================================
+   LTR OVERRIDES FOR ENGLISH
+   ============================================ */
+[data-lang="en"] .journey-item {
+    direction: ltr;
+}
+[data-lang="en"] .journey-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+[data-lang="en"] .section-label::before {
+    display: none;
+}
+[data-lang="en"] .section-label::after {
+    display: block;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+    .partners-track {
+        animation: none;
+    }
+}
+
+/* ============================================
+   SAFETY FALLBACK - ضمان ظهور المحتوى
+   العناصر مرئية افتراضياً. يتم إخفاؤها فقط بعد
+   تحميل GSAP بنجاح (عبر إضافة class="gsap-ready" على <html>)
+   هذا يمنع اختفاء المحتوى نهائياً إذا فشل تحميل المكتبات.
+   ============================================ */
+.journey-item,
+.feature-card,
+.product-card,
+.farm-gallery-card,
+.sustain-card,
+.news-card,
+.stat-item,
+.quality-list-item {
+    opacity: 1;
+}
+
+/* Keep card content visible even if the optional AOS library is unavailable. */
+.journey-item[data-aos],
+.feature-card[data-aos],
+.product-card[data-aos],
+.farm-gallery-card[data-aos],
+.sustain-card[data-aos],
+.news-card[data-aos],
+.stat-item[data-aos],
+.quality-list-item[data-aos] {
+    opacity: 1 !important;
+}
+
+/* فقط عندما يكون GSAP جاهزاً، نسمح بإخفاء العناصر للأنيميشن */

@@ -1,0 +1,207 @@
+/* ZIMAM POULTRY - components.css */
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.container-narrow {
+    max-width: var(--container-narrow);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.section {
+    padding: var(--space-24) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section--dark {
+    background: var(--dark);
+    color: #fff;
+}
+
+.section--soft {
+    background: var(--bg-soft);
+}
+
+.section--warm {
+    background: var(--bg-warm);
+}
+
+/* ============================================
+   SECTION HEADER
+   ============================================ */
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-16);
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--accent-dark);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-wide);
+    margin-bottom: var(--space-4);
+}
+
+.section-label::before,
+.section-label::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: var(--radius-full);
+}
+
+.section--dark .section-label {
+    color: var(--accent-light);
+}
+
+.section-title {
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-black);
+    line-height: var(--lh-tight);
+    color: var(--dark);
+    margin-bottom: var(--space-4);
+    letter-spacing: var(--ls-tight);
+}
+
+.section--dark .section-title {
+    color: #fff;
+}
+
+.section-desc {
+    font-size: var(--fs-md);
+    color: var(--text-light);
+    line-height: var(--lh-relaxed);
+}
+
+.section--dark .section-desc {
+    color: rgba(255,255,255,0.7);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: 14px 32px;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    border-radius: var(--radius-full);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background: var(--primary);
+    color: #fff;
+}
+.btn--primary:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.btn--accent {
+    background: var(--accent);
+    color: var(--dark);
+}
+.btn--accent:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-accent);
+}
+
+.btn--outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+.btn--outline:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn--white {
+    background: #fff;
+    color: var(--primary);
+}
+.btn--white:hover {
+    background: var(--bg-soft);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn--ghost {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+.btn--ghost:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+
+.btn--lg {
+    padding: 18px 42px;
+    font-size: var(--fs-lg);
+}
+
+.btn--sm {
+    padding: 10px 22px;
+    font-size: var(--fs-sm);
+}
+
+/* ============================================
+   GLASS CARD
+   ============================================ */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--glass-shadow);
+}
+
+/* ============================================
+   PREMIUM CARD
+   ============================================ */
+.premium-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    transition: var(--transition-slow);
+}
+.premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: transparent;
+}
+
+/* ============================================
+   LANGUAGE TOGGLE
+   ============================================ */
+.lang-hidden {
+    display: none !important;
+}

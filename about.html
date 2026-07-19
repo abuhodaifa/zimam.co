@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>من نحن | zimam</title>
+    <meta name="description" content="تعرّف على قصة zimam، رؤيتنا، رسالتنا، وقيمنا. شركة ليبية رائدة في إنتاج الدجاج الطازج والمبرد والمجمد منذ 2015م.">
+    <meta name="keywords" content="من نحن, zimam, قصة الشركة, رؤية, رسالة, فريق العمل">
+    <meta name="author" content="Zimam Co.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zimam-co.com/about.html">
+    <link rel="icon" type="image/jpg" href="images/zimam.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            z-index: 1000;
+            transition: transform 0.3s, box-shadow 0.3s;
+            direction: ltr;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
+        [data-lang="en"] .whatsapp-float { left: auto; right: 30px; }
+        @media (max-width: 480px) {
+            .whatsapp-float { width: 50px; height: 50px; font-size: 26px; bottom: 20px; left: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader" role="status" aria-label="جاري التحميل">
+        <div class="loader-logo">zimam<span>.</span></div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill" id="loaderBar"></div>
+        </div>
+        <div class="loader-text" data-ar="جاري تحميل الموقع..." data-en="Loading..."></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header is-scrolled" id="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="header-logo" aria-label="zimam" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="images/zimam.jpg" alt="zimam" style="height: 48px; width: auto; border: 2px solid #FFA500;">
+                    <span style="font-size: 18px; font-weight: bold; color: #000;">zimam</span>
+                </a>
+
+                <nav class="nav" id="mainNav" role="navigation" aria-label="القائمة الرئيسية">
+                    <a href="index.html#home" class="nav-link" data-ar="الرئيسية" data-en="Home"></a>
+                    <a href="about.html" class="nav-link is-active" data-ar="من نحن" data-en="About"></a>
+                    <a href="products.html" class="nav-link" data-ar="المنتجات" data-en="Products"></a>
+                    <a href="index.html#quality" class="nav-link" data-ar="الجودة" data-en="Quality"></a>
+                    <a href="index.html#sustainability" class="nav-link" data-ar="الاستدامة" data-en="Sustainability"></a>
+                    <a href="index.html#news" class="nav-link" data-ar="الأخبار" data-en="News"></a>
+                    <a href="contact.html" class="nav-link" data-ar="اتصل بنا" data-en="Contact"></a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-btn" id="langToggle" aria-label="تبديل اللغة">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="langLabel">EN</span>
+                    </button>
+                    <a href="contact.html" class="nav-cta" data-ar="اطلب الآن" data-en="Order Now"></a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="القائمة الجانبية">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="إغلاق القائمة">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html#home" class="nav-link" data-ar="الرئيسية" data-en="Home" data-mobile-nav></a>
+        <a href="about.html" class="nav-link" data-ar="من نحن" data-en="About" data-mobile-nav></a>
+        <a href="products.html" class="nav-link" data-ar="المنتجات" data-en="Products" data-mobile-nav></a>
+        <a href="index.html#quality" class="nav-link" data-ar="الجودة" data-en="Quality" data-mobile-nav></a>
+        <a href="index.html#sustainability" class="nav-link" data-ar="الاستدامة" data-en="Sustainability" data-mobile-nav></a>
+        <a href="index.html#news" class="nav-link" data-ar="الأخبار" data-en="News" data-mobile-nav></a>
+        <a href="contact.html" class="nav-link" data-ar="اتصل بنا" data-en="Contact" data-mobile-nav></a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1 data-ar="من نحن" data-en="About Us"></h1>
+            <p data-ar="قصتنا، رؤيتنا، والتزامنا بالتميز في صناعة الدواجن" data-en="Our Story, Our Vision, Our Commitment to Excellence"></p>
+            <div class="breadcrumb">
+                <a href="index.html" data-ar="الرئيسية" data-en="Home"></a>
+                <span>/</span>
+                <span data-ar="من نحن" data-en="About Us"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image" data-aos="fade-right">
+                    <img src="images/حضيرة دجاج.jpg" alt="مزارع zimam الحديثة" loading="lazy">
+                </div>
+                <div class="story-text" data-aos="fade-left">
+                    <div class="section-label" data-ar="قصتنا" data-en="Our Story"></div>
+                    <h2 data-ar="رحلة بدأت برؤية... واستمرت بشغف" data-en="A Journey That Started with a Vision... and Continued with Passion"></h2>
+                    <p data-ar="تأسست شركة zimam عام 2015م برؤية طموحة لإحداث نقلة نوعية في قطاع الدواجن الليبي. بدأنا كمشروع صغير لتربية الكتاكيت، ومع إصرارنا على الجودة والابتكار، نمونا لنصبح إحدى أكبر شركات إنتاج الدواجن في ليبيا." data-en="Zimam Co. was founded in 2015م with an ambitious vision to transform the Libyan poultry sector. We started as a small chick-rearing project, and with our commitment to quality and innovation, we grew to become one of the largest poultry production companies in Libya."></p>
+                    <p data-ar="اليوم، تمتلك zimam منظومة متكاملة تشمل التربية والتسمين والذبح والتجهيز والتوزيع، مع 12 مرفقاً إنتاجياً، وأكثر من 1500 موظف، وإنتاج سنوي يتجاوز 50 مليون دجاجة، نخدم من خلالها أكثر من 500 شريك تجاري في جميع أنحاء ليبيا." data-en="Today, Zimam owns an integrated system encompassing rearing, fattening, slaughtering, processing, and distribution, with 12 production facilities, over 1,500 employees, and an annual production exceeding 50 million chickens, serving more than 500 trade partners across Libya."></p>
+                    <a href="contact.html" class="btn btn--primary">
+                        <span data-ar="تواصل معنا" data-en="Contact Us"></span>
+                        <i class="fa-solid fa-arrow-left" data-arrow-rtl></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION / MISSION / VALUES -->
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="مبادئنا" data-en="Our Principles"></div>
+                <h2 class="section-title" data-ar="ما الذي يحركنا" data-en="What Drives Us"></h2>
+            </div>
+            <div class="vmv-grid">
+                <div class="vmv-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="vmv-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3 data-ar="رؤيتنا" data-en="Our Vision"></h3>
+                    <p data-ar="أن نكون الشركة الرائدة والمرجع الأول لصناعة الدواجن في ليبيا ومنطقة شمال أفريقيا، من خلال تقديم منتجات ذات جودة عالمية تليق بالمائدة الليبية." data-en="To be the leading company and primary reference for the poultry industry in Libya and North Africa, by delivering world-class quality products worthy of the Libyan table."></p>
+                </div>
+                <div class="vmv-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="vmv-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3 data-ar="رسالتنا" data-en="Our Mission"></h3>
+                    <p data-ar="تقديم منتجات دواجن آمنة وصحية وطازجة بأعلى معايير الجودة العالمية، مع الالتزام بالاستدامة البيئية والمساهمة في الأمن الغذائي الليبي." data-en="To provide safe, healthy, and fresh poultry products with the highest global quality standards, while committing to environmental sustainability and contributing to Libyan food security."></p>
+                </div>
+                <div class="vmv-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="vmv-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3 data-ar="قيمنا" data-en="Our Values"></h3>
+                    <p data-ar="الجودة أولاً، النزاهة في كل تعاملاتنا، الاهتمام بالعميل، الابتكار المستمر، والاحترام الكامل لفريقنا وللمجتمع الذي نخدمه." data-en="Quality first, integrity in all our dealings, customer focus, continuous innovation, and full respect for our team and the community we serve."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORY TIMELINE -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="مسيرتنا" data-en="Our Journey"></div>
+                <h2 class="section-title" data-ar="محطات في تاريخ zimam" data-en="Milestones in Zimam's History"></h2>
+            </div>
+            <div class="history-timeline">
+                <div class="history-item" data-aos="fade-up">
+                    <div class="history-year">2015م</div>
+                    <div class="history-content">
+                        <h4 data-ar="التأسيس" data-en="Founding"></h4>
+                        <p data-ar="تأسست zimam للدواجن كمشروع صغير لتربية الكتاكيت في منطقة العزيزية بطرابلس، بطاقة إنتاجية محدودة وفريق صغير من المؤسسين." data-en="Zimam Co. was founded as a small chick-rearing project in Al-Aziziya area of Tripoli, with limited production capacity and a small founding team."></p>
+                    </div>
+                </div>
+                <div class="history-item" data-aos="fade-up">
+                    <div class="history-year">2010</div>
+                    <div class="history-content">
+                        <h4 data-ar="التوسع الأول" data-en="First Expansion"></h4>
+                        <p data-ar="افتتاح أول مصنع لتجهيز وذبح الدواجن بقدرات إنتاجية متطورة، وتوسيع شبكة التوزيع لتشمل جميع مدن غرب ليبيا." data-en="Opening the first poultry processing and slaughtering plant with advanced production capabilities, and expanding the distribution network to cover all cities in western Libya."></p>
+                    </div>
+                </div>
+                <div class="history-item" data-aos="fade-up">
+                    <div class="history-year">2015</div>
+                    <div class="history-content">
+                        <h4 data-ar="الاعتماد الدولي" data-en="International Certification"></h4>
+                        <p data-ar="حصلت zimam على شهادة ISO 22000 لنظام إدارة السلامة الغذائية، وشهادة HACCP، لتصبح أول شركة دواجن ليبية تحقق هذا الإنجاز." data-en="Zimam obtained ISO 22000 certification for food safety management system and HACCP certification, becoming the first Libyan poultry company to achieve this milestone."></p>
+                    </div>
+                </div>
+                <div class="history-item" data-aos="fade-up">
+                    <div class="history-year">2020</div>
+                    <div class="history-content">
+                        <h4 data-ar="إنتاج 50 مليون" data-en="50 Million Production"></h4>
+                        <p data-ar="تجاوز الإنتاج السنوي 50 مليون دجاجة، وتوسيع الأسطول لأكثر من 50 شاحنة مبردة تغطي جميع أنحاء ليبيا." data-en="Annual production exceeded 50 million chickens, and the fleet expanded to more than 50 refrigerated trucks covering all of Libya."></p>
+                    </div>
+                </div>
+                <div class="history-item" data-aos="fade-up">
+                    <div class="history-year">2024</div>
+                    <div class="history-content">
+                        <h4 data-ar="أكبر مصنع في غرب ليبيا" data-en="Largest Plant in Western Libya"></h4>
+                        <p data-ar="افتتاح أكبر مصنع لتجهيز الدواجن في غرب ليبيا باستثمار 30 مليون دينار وطاقة إنتاجية 20 ألف دجاجة يومياً." data-en="Opening the largest poultry processing plant in western Libya with an investment of 30 million dinars and a daily production capacity of 20,000 chickens."></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="فريقنا" data-en="Our Team"></div>
+                <h2 class="section-title" data-ar="القيادة التي تصنع الفرق" data-en="Leadership That Makes a Difference"></h2>
+                <p class="section-desc" data-ar="فريق من الخبراء المتفانين الذين يقودون zimam نحو التميز" data-en="A team of dedicated experts leading Zimam toward excellence"></p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="team-avatar">أ</div>
+                    <div class="team-info">
+                        <div class="team-name" data-ar="أحمد الزروق" data-en="Ahmed Al-Zarruq"></div>
+                        <div class="team-role" data-ar="الرئيس التنفيذي" data-en="Chief Executive Officer"></div>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-avatar">ف</div>
+                    <div class="team-info">
+                        <div class="team-name" data-ar="فاطمة المبروك" data-en="Fatima Al-Mabrouk"></div>
+                        <div class="team-role" data-ar="مديرة العمليات" data-en="Chief Operating Officer"></div>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-avatar">خ</div>
+                    <div class="team-info">
+                        <div class="team-name" data-ar="خالد البلعص" data-en="Khaled Al-Balaas"></div>
+                        <div class="team-role" data-ar="مدير الجودة" data-en="Quality Manager"></div>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-avatar">س</div>
+                    <div class="team-info">
+                        <div class="team-name" data-ar="سالم الوافي" data-en="Salem Al-Wafi"></div>
+                        <div class="team-role" data-ar="مدير المبيعات" data-en="Sales Manager"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" data-ar="معرض الصور" data-en="Gallery"></div>
+                <h2 class="section-title" data-ar="لمحات من عالم zimam" data-en="Glimpses from Zimam's World"></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="0">
+                    <img src="images/حضيرة دجاج.jpg" alt="مزرعة zimam" loading="lazy">
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/دجاج مقطع.png" alt="منتجات zimam" loading="lazy">
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/دجاج بالغ جاهز للذبح.jpg" alt="مزارع zimam" loading="lazy">
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="0">
+                    <img src="images/دجاج مقطع.png" alt="منتجات zimam" loading="lazy">
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/حضيرة دجاج.jpg" alt="مصنع zimam" loading="lazy">
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/حضيرة دجاج.jpg" alt="مختبرات zimam" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title" data-ar="جاهز للشراكة مع zimam?" data-en="Ready to Partner with Zimam?"></h2>
+                <p class="cta-desc" data-ar="انضم إلى أكثر من 500 شريك يثقون بمنتجاتنا. تواصل معنا اليوم لمعرفة المزيد." data-en="Join over 500 partners who trust our products. Contact us today to learn more."></p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn--accent btn--lg">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span data-ar="تواصل معنا الآن" data-en="Contact Us Now"></span>
+                    </a>
+                    <a href="products.html" class="btn btn--ghost btn--lg">
+                        <span data-ar="استكشف منتجاتنا" data-en="Explore Products"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="images/zimam.jpg" alt="zimam" style="height: 50px; width: auto; border: 2px solid #FFA500;">
+                        <span style="font-size: 18px; font-weight: bold; color: #fff;">zimam</span>
+                    </div>
+                    <p class="footer-about" data-ar="شركة ليبية رائدة متخصصة في إنتاج وتجهيز وتوزيع الدجاج الطازج والمبرد والمجمد بأعلى معايير الجودة والسلامة الغذائية منذ 2015م." data-en="A leading Libyan company specialized in producing, processing, and distributing fresh, chilled, and frozen chicken with the highest quality and food safety standards since 2015م."></p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="لينكدإن"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links"></h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link" data-ar="الرئيسية" data-en="Home"></a>
+                        <a href="about.html" class="footer-link" data-ar="من نحن" data-en="About Us"></a>
+                        <a href="products.html" class="footer-link" data-ar="المنتجات" data-en="Products"></a>
+                        <a href="index.html#quality" class="footer-link" data-ar="الجودة والسلامة" data-en="Quality & Safety"></a>
+                        <a href="index.html#sustainability" class="footer-link" data-ar="الاستدامة" data-en="Sustainability"></a>
+                        <a href="index.html#news" class="footer-link" data-ar="الأخبار" data-en="News"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-ar="خدماتنا" data-en="Our Services"></h4>
+                    <div class="footer-links">
+                        <a href="products.html" class="footer-link" data-ar="توريد المطاعم والفنادق" data-en="Restaurant & Hotel Supply"></a>
+                        <a href="products.html" class="footer-link" data-ar="توريد الأسواق والمجمعات" data-en="Market & Mall Supply"></a>
+                        <a href="products.html" class="footer-link" data-ar="منتجات بالجملة" data-en="Wholesale Products"></a>
+                        <a href="products.html" class="footer-link" data-ar="قطع مخصصة حسب الطلب" data-en="Custom Cuts on Demand"></a>
+                        <a href="careers.html" class="footer-link" data-ar="التوظيف" data-en="Careers"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us"></h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-ar="ليبيا | السوكنة - الجفرة" data-en="Alsokna | aljofra - Libya"></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="phone-number" dir="ltr">091 381 7515</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span class="phone-number" dir="ltr">091 525 4120</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@zimam.ly</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span data-ar="الأحد - الخميس: 7 ص - 6 م" data-en="Sun - Thu: 7 AM - 6 PM"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span data-ar="© 2024 zimam. جميع الحقوق محفوظة." data-en="© 2024 Zimam Co. All Rights Reserved."></span>
+                <span data-ar="تصميم وتطوير بمعايير عالمية" data-en="Designed & Developed with Global Standards"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP & TELEGRAM FLOAT BUTTONS -->
+    <a href="https://wa.me/218913817515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب" style="left: 30px;">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://t.me/+218913817515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر تيليجرام" style="left: 100px;">
+        <i class="fa-brands fa-telegram"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 80 });
+    </script>
+</body>
+</html>
